@@ -1,0 +1,154 @@
+{
+  "version": 1,
+  "passes": [
+    {
+      "id": "0199c7d0-a4c9-7c99-8627-5d615535e85c",
+      "name": "Black",
+      "frag": "Black.frag.glsl",
+      "vert": "Black.vert.glsl"
+    },
+    {
+      "id": "0199c73e-ab16-7ec4-a285-00f9c83d6d0c",
+      "name": "Cubes",
+      "frag": "Cubes.frag.glsl",
+      "vert": "Cubes.vert.glsl"
+    },
+    {
+      "id": "0199c27b-d1ca-7ccd-8f26-d619696dcf21",
+      "name": "Waveform",
+      "frag": "Waveform.frag.glsl",
+      "vert": "Waveform.vert.glsl"
+    },
+    {
+      "id": "0199cc54-8836-765f-af91-f3b9b46bed0f",
+      "name": "Tiles",
+      "frag": "Tiles.frag.glsl",
+      "vert": "Tiles.vert.glsl"
+    },
+    {
+      "id": "0199cc86-a5ec-7bbc-9d19-9a4b19af0a66",
+      "name": "Logo",
+      "frag": "Logo.frag.glsl",
+      "vert": "Logo.vert.glsl"
+    },
+    {
+      "id": "0199c687-afc2-7692-8eee-f3941a44b87f",
+      "name": "Bloom",
+      "frag": "Bloom.frag.glsl",
+      "vert": "Bloom.vert.glsl"
+    },
+    {
+      "id": "0199c2c1-e3a9-700f-9a4b-869644db9923",
+      "name": "Invert",
+      "frag": "Invert.frag.glsl",
+      "vert": "Invert.vert.glsl"
+    },
+    {
+      "id": "0199c2a2-4a2f-78a4-b6b1-f4f144f4b611",
+      "name": "Chromatic Aberration",
+      "frag": "Chromatic_Aberration.frag.glsl",
+      "vert": "Chromatic_Aberration.vert.glsl"
+    },
+    {
+      "id": "0199c2a4-186c-7764-9acb-a23092fa1f71",
+      "name": "Noise",
+      "frag": "Noise.frag.glsl",
+      "vert": "Noise.vert.glsl"
+    },
+    {
+      "id": "0199c408-5e2e-7052-a2f3-cef857f89a2e",
+      "name": "Effects",
+      "frag": "Effects.frag.glsl",
+      "vert": "Effects.vert.glsl"
+    }
+  ],
+  "properties": [
+    {
+      "type": "time",
+      "enabled": true,
+      "properties": {
+        "speed": 1,
+        "variableName": "time"
+      }
+    },
+    {
+      "type": "resolution",
+      "enabled": true,
+      "properties": {
+        "renderPass": "Project",
+        "variableName": "resolution"
+      }
+    },
+    {
+      "type": "osc",
+      "enabled": true,
+      "properties": {
+        "serverUrl": "http://[::1]:8080/",
+        "address": "/s2l/out/bpm",
+        "defaultValue": 120,
+        "variableName": "bpm"
+      }
+    },
+    {
+      "type": "image",
+      "enabled": true,
+      "properties": {
+        "imageSrc": "images/drawLogo.png",
+        "variableName": "drawLogo"
+      }
+    },
+    {
+      "type": "prevPass",
+      "enabled": true,
+      "properties": {
+        "passId": "auto",
+        "variableName": "prevPass"
+      }
+    },
+    {
+      "type": "prevFrame",
+      "enabled": true,
+      "properties": {
+        "variableName": "prevFrame",
+        "passId": "auto"
+      }
+    },
+    {
+      "type": "audiowaveform",
+      "enabled": true,
+      "properties": {
+        "device": "",
+        "variableName": "waveform"
+      }
+    },
+    {
+      "type": "midi",
+      "enabled": true,
+      "properties": {
+        "device": "",
+        "notesVariable": "midiNotes",
+        "controlsVariable": "midiControls",
+        "variableName": "midi"
+      }
+    },
+    {
+      "type": "audiolevel",
+      "enabled": true,
+      "properties": {
+        "variableName": "audioLevel",
+        "device": "",
+        "smoothing": 0.8
+      }
+    }
+  ],
+  "graphicsSettings": {
+    "resolutionScale": 0.75,
+    "frameRate": 30,
+    "glslVersion": "webgl2"
+  },
+  "projectName": "draw_new_20",
+  "editorSettings": {
+    "uiOpacity": 0.1,
+    "layout": "stack"
+  }
+}
